@@ -1,0 +1,71 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+ .shuttle-calender {    background-color: #fff;    padding: 50px;}
+ #order-data {    position: relative;    background: #FFF;    padding: 3em 4em;    width: auto;    margin: 20px auto;    max-width: 800px;}
+ #order-data table {    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;    border-collapse: collapse;    width: 100%;}
+ #order-data table td, #order-data table th {    border: 1px solid #ddd;    padding: 8px;}
+ #order-data table tr:nth-child(even){background-color: #f2f2f2;}
+ #order-data table tr:hover {background-color: #ddd;}
+ #order-data table th {    padding-top: 12px;    padding-bottom: 12px;    text-align: left;    background-color: #4CAF50;    color: white;}
+ #order-data .top .left, #order-data .top .right {    width: 50%;    display: inline-block;    vertical-align: top;}
+ #order-data .top {    margin-bottom: 30px;    border-bottom: 1px solid #ddd;    padding-bottom: 10px;}
+ #order-data .top li {    color: red;}
+ #order-data .top li strong {    color: #000;}
+ body.post-type-product #post-body-content #titlediv, body.post-type-product #woocommerce-product-data .hndle, #inventory_product_data p._sku_field, #inventory_product_data p._backorders_field, #inventory_product_data p._low_stock_amount_field, #inventory_product_data p.form-field._sold_individually_field.show_if_simple.show_if_variable {    display: none !important;}
+ body.taxonomy-departure tr.term-slug-wrap, body.taxonomy-departure .term-parent-wrap,body.taxonomy-departure .term-description-wrap { display:none !important; }
+ body.taxonomy-arrival tr.term-slug-wrap, body.taxonomy-arrival .term-parent-wrap,body.taxonomy-arrival .term-description-wrap, #inventory_product_data .options_group { display:none !important; }
+ /*li#menu-posts-product ul.wp-submenu li:nth-child(7), li#menu-posts-product ul.wp-submenu li:nth-child(8),li#menu-posts-product ul.wp-submenu li:nth-child(9){ display: none; }*/
+ #inventory_product_data .options_group.shuttle_options_group { display: block !important; }
+ .slider {position: absolute;cursor: pointer;top: 0;left: 0;right: 0;bottom: 0;background-color: #ca2222;-webkit-transition: .4s;transition: .4s;}
+ .slider:before {position: absolute;content: "";height: 26px;width: 26px;left: 4px;bottom: 4px;background-color: white;-webkit-transition: .4s;transition: .4s;}
+ input:checked + .slider {background-color: #2ab934;}
+ input:focus + .slider {box-shadow: 0 0 1px #2196F3;}
+ input:checked + .slider:before {-webkit-transform: translateX(55px);-ms-transform: translateX(55px);transform: translateX(55px);}
+ .on{display: none;}
+ .on, .off{color: white;position: absolute;transform: translate(-50%,-50%);top: 50%;left: 50%;font-size: 10px;font-family: Verdana, sans-serif;}
+ input:checked+ .slider .on{display: block;}
+ input:checked + .slider .off{display: none;}
+ .slider.round {border-radius: 34px;}
+ .slider.round:before {border-radius: 50%;}
+ #enable-disable-product .switch input {    display: none;}
+ #enable-disable-product label.switch {    width: 90px;    height: 34px;    position: relative;    display: inline-block;    vertical-align: middle;    margin: 0;}
+ #enable-disable-product .trip p {    display: inline-block;}
+ #enable-disable-product h2.hndle.ui-sortable-handle {    display: none;}
+ #enable-disable-product .inside {    text-align: right;    background-color: #f1f1f1;    padding: 0;    margin: 0;}
+ #enable-disable-product {    border: none;    background: transparent;    box-shadow: none;}
+
+ #availability-product .inside .days .day p.form-field, #availability-product .inside .days .day input {    display: inline-block;    vertical-align: middle;}
+ #availability-product .inside .days .day p.form-field select, #availability-product .inside .days .day input{     width: 70px; }
+ #availability-product .inside .days .day input[type="button"]{     width: auto; }
+ #availability-product .inside .days {    display: inline-block;    vertical-align: top;    width: 32%;}
+ #availability-product .inside .days .day, #availability-product .inside .days .head {    width: fit-content;    margin: 0 auto;}
+ #availability-product .inside .days h3 {    text-align: center;     text-transform: capitalize;}
+ #availability-product .inside .days .head label {    width: 70px;    display: inline-block;    text-align: center;    font-weight: 600;}
+ #availability-product .inside .days .day-inner {    margin: 10px;    padding: 10px 10px 30px;    border: 1px solid #ddd;    background-color: #fdfdfd;}
+ #availability-product .inside .days .day input[type="button"] { cursor: pointer;    background: #0085ba;    box-shadow: 0 1px 0 #006799;    color: #fff;    text-decoration: none;    text-shadow: 0 -1px 1px #006799, 1px 0 1px #006799, 0 1px 1px #006799, -1px 0 1px #006799;    border: none;    text-transform: capitalize;    padding: 5px 10px;    border-radius: 2px;}
+ .fc-month-view .fc-day-grid-event { display: none; }
+ .fc-month-view .fc-row.fc-rigid .fc-content-skeleton { padding: 20px 0; }
+ .fc-month-view .fc-day-top { text-align: center; font-size: 25px; }
+ .fc-month-view .fc-day-top a { float: none !important; margin: 20px !important; }
+ .product-list .slider.round{ height: 34px; width: 90px; }
+ .product-list .is_switch { display: none;  }
+ .shuttle-dashboard.wrap.woocommerce { background-color: #fff; padding: 20px; }
+ .shuttle-dashboard.wrap.woocommerce .list { width: 30%; float: left; margin: 0.5%;	font-size: 15px; font-weight: 500; border-radius: 3px 3px 0 0; }
+ .shuttle-dashboard.wrap.woocommerce .list:nth-child(3n + 1) { clear: both;  }
+ .shuttle-dashboard.wrap.woocommerce table { width: 100%; text-align: center; border-spacing: 0; box-shadow: 0 0 15px #ddd;	border-collapse: collapse; }
+ .shuttle-dashboard.wrap.woocommerce .list h3{ margin: 0; padding: 10px 0; text-align: center; color: #fff;	background: #1d1e1f54; border-radius: 3px 3px 0 0; text-transform: uppercase; }
+ .shuttle-dashboard.wrap.woocommerce .list p { font-size: 25px;	margin: 12px; text-align: center; }
+ .shuttle-dashboard.wrap.woocommerce .list tr th { background: #181b2b78; padding: 10px; color: #fff; -moz-box-shadow: inset 0 0 10px #000000; -webkit-box-shadow: inset 0 0 10px #181b2b; box-shadow: inset 0 0 10px #181b2b; border-radius: 3px 3px 0 0; }
+ #menu-posts-product .wp-submenu li:nth-child(10) { display: none; }
+ .shuttle-dashboard.wrap.woocommerce .list tr:nth-child(odd) td { background: #8bc34a57; padding: 10px; }
+ .shuttle-dashboard.wrap.woocommerce .list tr:nth-child(even) td { background: #4caf5082; padding: 10px; }
+ .shuttle-dashboard.wrap.woocommerce .list tr:nth-child(2) td { background: #03a9f463; padding: 10px; }
+ .shuttle-calender #calendar { width: 650px;  }
+ .fc-toolbar{ background: #355668; margin: 0 !important;	padding: 10px; }
+ .fc-toolbar .fc-center h2 { color: #fff; }
+ .fc-day-header span { padding: 7px; display: block;	background: #254250; color: #fff;}
+.click_here{
+ cursor: pointer; }
